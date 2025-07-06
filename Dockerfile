@@ -2,7 +2,9 @@
 FROM node:22-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json* ./ 
-RUN npm install
+RUN npm install -g npm@11.4.2
+
+RUN npm install --force
 
 # Rebuild the source code only when needed
 FROM node:22-alpine AS builder
