@@ -1,0 +1,11 @@
+# Task ID: 9
+# Title: Add Accessibility Features
+# Status: pending
+# Dependencies: 8
+# Priority: medium
+# Description: Ensure the app is accessible to all users by implementing ARIA labels and keyboard navigation.
+# Details:
+Use semantic HTML, ARIA roles, and ensure all interactive elements are navigable via keyboard. Test with screen readers.
+
+# Test Strategy:
+Verify that the app is usable with a screen reader and all interactive elements can be accessed via keyboard.

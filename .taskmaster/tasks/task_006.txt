@@ -1,0 +1,11 @@
+# Task ID: 6
+# Title: Implement Dark Mode
+# Status: done
+# Dependencies: 5
+# Priority: medium
+# Description: Add dark mode support using Tailwind CSS.
+# Details:
+Use Tailwind's dark mode utilities to toggle between light and dark themes. Ensure the theme persists across sessions.
+
+# Test Strategy:
+Check that toggling dark mode works correctly and the theme is preserved when reloading the page.

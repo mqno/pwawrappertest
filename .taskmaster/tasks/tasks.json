@@ -1,0 +1,166 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Next.js Project",
+        "description": "Initialize a new Next.js project with TypeScript and Tailwind CSS.",
+        "details": "Use the latest version of Next.js (14.2.30) and set up Tailwind CSS for styling. Ensure TypeScript is configured correctly.",
+        "testStrategy": "Verify that the project structure is correct, TypeScript compiles without errors, and Tailwind CSS classes are applied.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Create Basic Page Layout",
+        "description": "Develop a basic page layout with placeholders for image and text.",
+        "details": "Use Next.js components to create a simple layout. Ensure the layout is responsive using Tailwind CSS.",
+        "testStrategy": "Check that the page renders correctly on different screen sizes and the placeholders are displayed.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Implement Responsive Design",
+        "description": "Ensure the layout adapts to various screen sizes using responsive design techniques.",
+        "details": "Use CSS Grid/Flexbox and Tailwind CSS breakpoints. Test on mobile, tablet, and desktop devices.",
+        "testStrategy": "Verify that the layout adjusts correctly across different screen sizes and orientations.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Add PWA Manifest",
+        "description": "Create a web app manifest for PWA installability.",
+        "details": "Define the manifest.json file with necessary metadata such as name, short_name, start_url, display, and icons.",
+        "testStrategy": "Check that the manifest is valid and the PWA can be installed on devices.",
+        "priority": "medium",
+        "dependencies": [
+          3
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Configure Service Worker",
+        "description": "Set up a basic service worker for caching.",
+        "details": "Implement a simple service worker to cache the app shell and static assets. Ensure it works with Next.js.",
+        "testStrategy": "Verify that the service worker is registered, caches resources, and the app can work offline.",
+        "priority": "medium",
+        "dependencies": [
+          4
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Implement Dark Mode",
+        "description": "Add dark mode support using Tailwind CSS.",
+        "details": "Use Tailwind's dark mode utilities to toggle between light and dark themes. Ensure the theme persists across sessions.",
+        "testStrategy": "Check that toggling dark mode works correctly and the theme is preserved when reloading the page.",
+        "priority": "medium",
+        "dependencies": [
+          5
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Enhance Service Worker Caching",
+        "description": "Improve the service worker caching strategy for better offline functionality.",
+        "details": "Update the service worker to cache dynamic content and provide fallback pages when offline. Use Next.js PWA plugins if available.",
+        "testStrategy": "Verify that the app works fully offline, including dynamic content, and provides appropriate fallbacks.",
+        "priority": "medium",
+        "dependencies": [
+          6
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Optimize Image Loading",
+        "description": "Implement image optimization techniques to improve performance.",
+        "details": "Use Next.js Image component for automatic optimization. Implement lazy loading and ensure images are served via a CDN if possible.",
+        "testStrategy": "Check that images load quickly, are optimized correctly, and the page performance metrics (Lighthouse) improve.",
+        "priority": "medium",
+        "dependencies": [
+          7
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Add Accessibility Features",
+        "description": "Ensure the app is accessible to all users by implementing ARIA labels and keyboard navigation.",
+        "details": "Use semantic HTML, ARIA roles, and ensure all interactive elements are navigable via keyboard. Test with screen readers.",
+        "testStrategy": "Verify that the app is usable with a screen reader and all interactive elements can be accessed via keyboard.",
+        "priority": "medium",
+        "dependencies": [
+          8
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Add Smooth Animations",
+        "description": "Implement smooth animations and transitions to enhance user experience.",
+        "details": "Use CSS animations or JavaScript libraries like GSAP for smooth transitions. Ensure animations do not negatively impact performance.",
+        "testStrategy": "Check that animations are smooth and do not cause layout shifts or performance issues.",
+        "priority": "low",
+        "dependencies": [
+          9
+        ],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "Implement Web Push Notification Capability",
+        "description": "Add functionality to send web push notifications to users who have granted permission.",
+        "details": "Integrate a service like Firebase Cloud Messaging (FCM) or another push notification service. Implement client-side code to request and handle permissions, and server-side logic to send notifications. Ensure compatibility with different browsers and devices.",
+        "testStrategy": "Verify that the app can request and receive permission for push notifications. Test sending notifications from the server and ensure they are received by clients who have granted permission. Check cross-browser compatibility and handle edge cases like denied permissions or network issues.",
+        "status": "done",
+        "dependencies": [
+          4,
+          5
+        ],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 12,
+        "title": "Add Notification Buttons to Home Page",
+        "description": "Add two buttons on the home page: 'Send Notification' for immediate push notification and 'Send Timed Notification' for delayed notification (30 seconds).",
+        "details": "Implement two buttons on the home page. The 'Send Notification' button should trigger an immediate web push notification using the existing notification capability. The 'Send Timed Notification' button should delay sending a notification by 30 seconds. Ensure that both buttons are styled consistently with the rest of the UI and handle any potential errors gracefully.",
+        "testStrategy": "Verify that clicking the 'Send Notification' button triggers an immediate push notification. Verify that clicking the 'Send Timed Notification' button triggers a notification after exactly 30 seconds. Test for error handling in cases where notifications cannot be sent, such as permission issues or network problems.",
+        "status": "done",
+        "dependencies": [
+          11
+        ],
+        "priority": "medium",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-07-06T12:51:22.730Z",
+      "updated": "2025-07-06T13:20:12.807Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Task ID: 5
+# Title: Configure Service Worker
+# Status: done
+# Dependencies: 4
+# Priority: medium
+# Description: Set up a basic service worker for caching.
+# Details:
+Implement a simple service worker to cache the app shell and static assets. Ensure it works with Next.js.
+
+# Test Strategy:
+Verify that the service worker is registered, caches resources, and the app can work offline.

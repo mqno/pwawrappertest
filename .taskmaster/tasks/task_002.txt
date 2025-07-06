@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: Create Basic Page Layout
+# Status: done
+# Dependencies: 1
+# Priority: high
+# Description: Develop a basic page layout with placeholders for image and text.
+# Details:
+Use Next.js components to create a simple layout. Ensure the layout is responsive using Tailwind CSS.
+
+# Test Strategy:
+Check that the page renders correctly on different screen sizes and the placeholders are displayed.
