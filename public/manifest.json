@@ -7,6 +7,14 @@
   "background_color": "#ffffff",
   "theme_color": "#1f2937",
   "orientation": "portrait-primary",
+    "display_override": [
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay"
+  ],
+  "window_controls_overlay": false,
+  "dir": "ltr",
+  "id": "/",
   "scope": "/",
   "lang": "en",
   "categories": [
