@@ -17,10 +17,10 @@
       ]
     },
     {
-      "name": "Profile",
-      "short_name": "Profile",
-      "description": "View your profile",
-      "url": "/profile",
+      "name": "Hubs",
+      "short_name": "Hubs",
+      "description": "View all hubs",
+      "url": "/hubs",
       "icons": [
         {
           "src": "/App_Icon.png",
@@ -30,10 +30,10 @@
       ]
     },
     {
-      "name": "Matches",
-      "short_name": "Matches",
-      "description": "See your matches",
-      "url": "/matches",
+      "name": "Tournaments",
+      "short_name": "Tournaments",
+      "description": "See all tournaments",
+      "url": "/tournaments",
       "icons": [
         {
           "src": "/App_Icon.png",
@@ -82,6 +82,12 @@
       "src": "/App_Icon.png",
       "sizes": "any",
       "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "/App_Icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     },
     {
