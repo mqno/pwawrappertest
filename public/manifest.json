@@ -29,7 +29,11 @@
   "orientation": "any",
   "theme_color": "#8E41FF",
   "background_color": "#8E41FF",
-  "display_override": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "minimal-ui",
+    "window-controls-overlay"
+  ],
   "display": "standalone",
   "icons": [
     {
