@@ -18,7 +18,7 @@
   ],
   "protocol_handlers": [
     {
-      "protocol": "web+ready2gg",
+      "protocol": "web+readygg",
       "url": "/?url=%s"
     }
   ],
